@@ -10,6 +10,20 @@ private:
 public:
 	//constructor
 	StackArray() {
+		top = -1;
+	}
 
+	int push(int element) {
+		if (top == 4) {		// step 1
+			cout << "Number of data exceeds the limit." << endl;
+			return 0;
+		}
+
+		top++;
+		stack_array[top] = element;	//step3
+		cout << endl;
+		cout << element << "Ditambahkan(pushed)" << endl;
+
+		return element;
 	}
 };
