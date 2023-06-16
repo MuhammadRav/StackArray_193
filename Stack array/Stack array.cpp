@@ -13,10 +13,15 @@ public:
 		top = -1;
 	}
 
-	int push(int element) {
+	void push() {
+		cout << "\nEnter an Element.";
+		int element;
+		cin >> element;
+
+
 		if (top == 4) {		// step 1
 			cout << "Number of data exceeds the limit." << endl;
-			return 0;
+			return;
 		}
 
 		top++;
@@ -24,7 +29,6 @@ public:
 		cout << endl;
 		cout << "'" << element << "'" << " Ditambahkan(pushed)" << endl;
 
-		return element;
 	}
 
 	void pop() {
@@ -68,10 +72,7 @@ int main() {
 		cin >> ch;
 		switch (ch) {
 		case '1': {
-			cout << "\nEnter an Element: ";
-			int element;
-			cin >> element;
-			s.push(element);
+			s.push();
 			break;
 		}
 		case '2':
