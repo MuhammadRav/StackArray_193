@@ -39,7 +39,7 @@ public:
 
 	//method for check if data is empty
 	bool empty() {
-		return (top == -1)
+		return (top == -1);
 	}
 
 	void display() {
@@ -79,7 +79,10 @@ int main() {
 				cout << "\nStack is empty." << endl;
 				break;
 			}
-			s.pop
+			s.pop();
+			break;
+		case '3':
+
 		}
 	}
 }
